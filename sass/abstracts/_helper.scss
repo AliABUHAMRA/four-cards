@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  @include respond-to(small) {
+    max-width: 311px;
+  }
+  @include respond-to(large) {
+    max-width: 1110px;
+  }
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}

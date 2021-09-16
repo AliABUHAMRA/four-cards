@@ -1,0 +1,23 @@
+h1 {
+  color: $color-dark-blue;
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $color-dark-blue;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $color-dark-blue;
+  letter-spacing: 0.1px;
+  opacity: 0.5;
+}
+
+.section__des {
+  font-size: 1.3rem;
+}

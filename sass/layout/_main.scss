@@ -1,0 +1,81 @@
+main > .container {
+  @include respond-to(large) {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: 200px;
+    grid-auto-rows: minmax(
+      250px,
+      auto
+    ); // keep min width 250px, if content bigger than 250px then (auto)
+    grid-auto-columns: minmax(350px, auto);
+    grid-template-areas:
+      "one two four"
+      "one three four";
+    grid-gap: 30px;
+  }
+}
+
+.section {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  margin-bottom: 25px;
+  min-height: 250px;
+  padding: 28px;
+  border-radius: 0 0 6px 6px;
+
+  display: flex;
+  flex-direction: column;
+  @include respond-to(large) {
+    margin: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3.55px;
+    border-radius: 10px 10px 0 0;
+  }
+  &__img {
+    padding-top: inherit;
+    max-width: 100%;
+    align-self: end;
+  }
+}
+
+.section-one {
+  grid-area: one;
+  align-self: center;
+}
+
+.section-two {
+  grid-area: two;
+}
+
+.section-three {
+  grid-area: three;
+}
+
+.section-four {
+  grid-area: four;
+  align-self: center;
+}
+
+section:nth-of-type(1)::before {
+  background-color: $color-pink;
+}
+
+section:nth-of-type(2)::before {
+  background-color: $color-red;
+}
+
+section:nth-of-type(3)::before {
+  background-color: $color-orange;
+}
+
+section:nth-of-type(4)::before {
+  background-color: $color-blue;
+}
