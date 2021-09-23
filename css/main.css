@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 .container {
   margin: 0 auto;
-}
-
-@media (max-width: 767px) {
-  .container {
-    max-width: 311px;
-  }
+  width: 87%;
 }
 
 @media (min-width: 1024px) {
@@ -423,14 +418,22 @@ p {
   }
 }
 
+main {
+  max-width: 87%;
+  margin: 0 auto;
+}
+
 @media (min-width: 1024px) {
-  main > .container {
+  main {
     display: -ms-grid;
     display: grid;
     grid-auto-rows: minmax(250px, auto);
-    grid-auto-columns: minmax(350px, auto);
+    grid-auto-columns: minmax(auto, 350px);
         grid-template-areas: "one two four" "one three four";
     grid-gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

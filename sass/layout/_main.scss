@@ -1,4 +1,6 @@
-main > .container {
+main {
+  max-width: 87%;
+  margin: 0 auto;
   @include respond-to(large) {
     display: grid;
     // grid-template-columns: repeat(3, 1fr);
@@ -7,11 +9,12 @@ main > .container {
       250px,
       auto
     ); // keep min width 250px, if content bigger than 250px then (auto)
-    grid-auto-columns: minmax(350px, auto);
+    grid-auto-columns: minmax(auto, 350px);
     grid-template-areas:
       "one two four"
       "one three four";
     grid-gap: 30px;
+    justify-content: center;
   }
 }
 

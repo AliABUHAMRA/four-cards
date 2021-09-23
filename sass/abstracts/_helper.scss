@@ -1,8 +1,6 @@
 .container {
   margin: 0 auto;
-  @include respond-to(small) {
-    max-width: 311px;
-  }
+  width: 87%;
   @include respond-to(large) {
     max-width: 1110px;
   }
