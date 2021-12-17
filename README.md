@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/single-price-grid-component-IyMM5_NhZ)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/four-card-feature-section--B0ew6WyG)
 - Live Site URL: [Live site URL](https://aliabuhumra.github.io/four-cards/)
 
 ## My process
